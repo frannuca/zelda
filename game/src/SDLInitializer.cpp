@@ -6,7 +6,7 @@
 #include "sdlcleanup.h"
 
 
-SDLInitializer::SDLInitializer():name("no name"),heigth(640),width(480),win(nullptr),ren(nullptr) {
+SDLInitializer::SDLInitializer():name("no name"),heigth(640),width(1480),win(nullptr),ren(nullptr) {
     initall();
 }
 

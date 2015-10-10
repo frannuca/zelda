@@ -1,0 +1,4385 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "page",
+			"value": "1",
+			"isPersistent": false
+		}],
+	"scripts": [[63,
+			110,
+			[["whenKeyPressed", "right arrow"],
+				["changeVar:by:", "page", 1],
+				["doIf", ["=", ["readVariable", "page"], "4"], [["setVar:to:", "page", "3"]]]]],
+		[35,
+			218,
+			[["whenKeyPressed", "left arrow"],
+				["changeVar:by:", "page", -1],
+				["doIf", ["=", ["readVariable", "page"], "0"], [["setVar:to:", "page", "1"]]]]],
+		[5, 14, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "pool"]]]]]],
+	"sounds": [{
+			"soundName": "pool",
+			"soundID": 1,
+			"md5": "33af89da7508cf10178de72363afa5a7.wav",
+			"sampleCount": 2237680,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 274,
+			"baseLayerMD5": "4653fda9dabec1ef895d121915299827.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Peashooter",
+			"scripts": [[50,
+					5,
+					[["whenGreenFlag"],
+						["lookLike:", "Peashooter-0"],
+						["gotoX:y:", -140, 102],
+						["doForever", [["nextCostume"]]]]],
+				[113,
+					167,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Peashooter-0",
+					"baseLayerID": 1,
+					"baseLayerMD5": "3c63644a7d3ab74c78a468e3ca9b4f7b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "3c63644a7d3ab74c78a468e3ca9b4f7b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-2",
+					"baseLayerID": 2,
+					"baseLayerMD5": "abd4fc4df0456d85f289977538bd8fb0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Peashooter-3",
+					"baseLayerID": 3,
+					"baseLayerMD5": "e4904e2a38a70bafee1734b300bb5377.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-4",
+					"baseLayerID": 4,
+					"baseLayerMD5": "719bbb6d888242f623715fa02fbc41c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-5",
+					"baseLayerID": 4,
+					"baseLayerMD5": "719bbb6d888242f623715fa02fbc41c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-6",
+					"baseLayerID": 5,
+					"baseLayerMD5": "9bc5f83adff2eea05d131de84c592ddb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-7",
+					"baseLayerID": 5,
+					"baseLayerMD5": "9bc5f83adff2eea05d131de84c592ddb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-8",
+					"baseLayerID": 6,
+					"baseLayerMD5": "5d10a457b27a82eb199fbf3558de2744.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-9",
+					"baseLayerID": 6,
+					"baseLayerMD5": "5d10a457b27a82eb199fbf3558de2744.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-10",
+					"baseLayerID": 7,
+					"baseLayerMD5": "94023323db642c5ba6b2ee5373e38a63.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Peashooter-11",
+					"baseLayerID": 8,
+					"baseLayerMD5": "9622320b7887e83a254f523720111dee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-12",
+					"baseLayerID": 9,
+					"baseLayerMD5": "210e58c028fc55f47765c675c772b945.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-13",
+					"baseLayerID": 9,
+					"baseLayerMD5": "210e58c028fc55f47765c675c772b945.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-14",
+					"baseLayerID": 10,
+					"baseLayerMD5": "3cb74308fca1ce8b38a7db31c5834f81.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-15",
+					"baseLayerID": 10,
+					"baseLayerMD5": "3cb74308fca1ce8b38a7db31c5834f81.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-16",
+					"baseLayerID": 11,
+					"baseLayerMD5": "623b0d427f2628a37db5745a93a3fcb9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-17",
+					"baseLayerID": 11,
+					"baseLayerMD5": "623b0d427f2628a37db5745a93a3fcb9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-18",
+					"baseLayerID": 12,
+					"baseLayerMD5": "8e3f1b94491bac6e070aca6acff98da9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-19",
+					"baseLayerID": 12,
+					"baseLayerMD5": "8e3f1b94491bac6e070aca6acff98da9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-20",
+					"baseLayerID": 13,
+					"baseLayerMD5": "b529a7a0013f9f6cb73495f283bd9e5d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-21",
+					"baseLayerID": 13,
+					"baseLayerMD5": "b529a7a0013f9f6cb73495f283bd9e5d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-22",
+					"baseLayerID": 14,
+					"baseLayerMD5": "8e74f904c81cff60a2f27b6f24af2981.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-23",
+					"baseLayerID": 14,
+					"baseLayerMD5": "8e74f904c81cff60a2f27b6f24af2981.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-24",
+					"baseLayerID": 15,
+					"baseLayerMD5": "b5067c2d61bf93ac3abd0300e489e2aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-25",
+					"baseLayerID": 15,
+					"baseLayerMD5": "b5067c2d61bf93ac3abd0300e489e2aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-26",
+					"baseLayerID": 16,
+					"baseLayerMD5": "4d203d8cd28c31f2c54bb4b55f49c523.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-27",
+					"baseLayerID": 16,
+					"baseLayerMD5": "4d203d8cd28c31f2c54bb4b55f49c523.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-28",
+					"baseLayerID": 17,
+					"baseLayerMD5": "7895c861fae952500ffaddd832c46a08.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-29",
+					"baseLayerID": 17,
+					"baseLayerMD5": "7895c861fae952500ffaddd832c46a08.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-30",
+					"baseLayerID": 18,
+					"baseLayerMD5": "66f8f2888454f9fd4260bae7ba5ec889.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-31",
+					"baseLayerID": 18,
+					"baseLayerMD5": "66f8f2888454f9fd4260bae7ba5ec889.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-32",
+					"baseLayerID": 19,
+					"baseLayerMD5": "95b776a0ca0c7157522f67e8255c4f85.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-33",
+					"baseLayerID": 19,
+					"baseLayerMD5": "95b776a0ca0c7157522f67e8255c4f85.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-34",
+					"baseLayerID": 20,
+					"baseLayerMD5": "ace57554f383b80d5b62824b00c7787a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-35",
+					"baseLayerID": 20,
+					"baseLayerMD5": "ace57554f383b80d5b62824b00c7787a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-36",
+					"baseLayerID": 21,
+					"baseLayerMD5": "622b534c26762fd7969bbb5759f57dc7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-37",
+					"baseLayerID": 21,
+					"baseLayerMD5": "622b534c26762fd7969bbb5759f57dc7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Peashooter-38",
+					"baseLayerID": 22,
+					"baseLayerMD5": "3e6effedd4c210ca833c0cd074b2b10f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 13,
+			"scratchX": -130,
+			"scratchY": 102,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Zombie",
+			"scripts": [[28,
+					17,
+					[["whenGreenFlag"],
+						["gotoX:y:", 146, 91],
+						["lookLike:", "Zombie-0"],
+						["doForever", [["nextCostume"]]]]],
+				[28,
+					233,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Zombie-0",
+					"baseLayerID": 23,
+					"baseLayerMD5": "e3bf2fa86d5b7da85930675c25a737fb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-1",
+					"baseLayerID": 24,
+					"baseLayerMD5": "1b9ee29676e7f630d26464ba24fa329d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-2",
+					"baseLayerID": 24,
+					"baseLayerMD5": "1b9ee29676e7f630d26464ba24fa329d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-3",
+					"baseLayerID": 25,
+					"baseLayerMD5": "c31d695cc64ee0f9bce60160eeebd0e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-4",
+					"baseLayerID": 25,
+					"baseLayerMD5": "c31d695cc64ee0f9bce60160eeebd0e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-5",
+					"baseLayerID": 26,
+					"baseLayerMD5": "c92da47c8c371fc9101dec8b21bc20e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-6",
+					"baseLayerID": 26,
+					"baseLayerMD5": "c92da47c8c371fc9101dec8b21bc20e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-7",
+					"baseLayerID": 27,
+					"baseLayerMD5": "6c4eda47bd61f1d10f6de89aa996da05.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-8",
+					"baseLayerID": 27,
+					"baseLayerMD5": "6c4eda47bd61f1d10f6de89aa996da05.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-9",
+					"baseLayerID": 28,
+					"baseLayerMD5": "f7d9761f70996b5f4b22b60003896c4c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-10",
+					"baseLayerID": 28,
+					"baseLayerMD5": "f7d9761f70996b5f4b22b60003896c4c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-11",
+					"baseLayerID": 29,
+					"baseLayerMD5": "daac20677b9938bf3a44e6f5cc46986a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-12",
+					"baseLayerID": 29,
+					"baseLayerMD5": "daac20677b9938bf3a44e6f5cc46986a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-13",
+					"baseLayerID": 30,
+					"baseLayerMD5": "30efbc51e7bff804fc2433e37a82df07.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-14",
+					"baseLayerID": 30,
+					"baseLayerMD5": "30efbc51e7bff804fc2433e37a82df07.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-15",
+					"baseLayerID": 31,
+					"baseLayerMD5": "4190411c6d32e0bfc0b9344fb8284ad0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-16",
+					"baseLayerID": 31,
+					"baseLayerMD5": "4190411c6d32e0bfc0b9344fb8284ad0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-17",
+					"baseLayerID": 32,
+					"baseLayerMD5": "5309671f3db73214f233d739f4c28635.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-18",
+					"baseLayerID": 32,
+					"baseLayerMD5": "5309671f3db73214f233d739f4c28635.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-19",
+					"baseLayerID": 33,
+					"baseLayerMD5": "dd5cc12deca607ff5477986e72dbd771.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-20",
+					"baseLayerID": 33,
+					"baseLayerMD5": "dd5cc12deca607ff5477986e72dbd771.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-21",
+					"baseLayerID": 34,
+					"baseLayerMD5": "2e09670633a6c47e368a93b0a3493454.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-22",
+					"baseLayerID": 34,
+					"baseLayerMD5": "2e09670633a6c47e368a93b0a3493454.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-23",
+					"baseLayerID": 35,
+					"baseLayerMD5": "ff5666bbcae58d5846be72a2287f236f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-24",
+					"baseLayerID": 35,
+					"baseLayerMD5": "ff5666bbcae58d5846be72a2287f236f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-25",
+					"baseLayerID": 36,
+					"baseLayerMD5": "931e9ac82d3e26208f07701aa260af24.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-26",
+					"baseLayerID": 36,
+					"baseLayerMD5": "931e9ac82d3e26208f07701aa260af24.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-27",
+					"baseLayerID": 37,
+					"baseLayerMD5": "6c381e9daf91e1228189304d353f76c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-28",
+					"baseLayerID": 37,
+					"baseLayerMD5": "6c381e9daf91e1228189304d353f76c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-29",
+					"baseLayerID": 38,
+					"baseLayerMD5": "087aece585c2c224d1757e3be7151c9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-30",
+					"baseLayerID": 38,
+					"baseLayerMD5": "087aece585c2c224d1757e3be7151c9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-31",
+					"baseLayerID": 39,
+					"baseLayerMD5": "a9323e451c321d21bec8116ef5456441.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-32",
+					"baseLayerID": 39,
+					"baseLayerMD5": "a9323e451c321d21bec8116ef5456441.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-33",
+					"baseLayerID": 40,
+					"baseLayerMD5": "25b28ae7fc0a2023882302623e5cd641.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-34",
+					"baseLayerID": 40,
+					"baseLayerMD5": "25b28ae7fc0a2023882302623e5cd641.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-35",
+					"baseLayerID": 41,
+					"baseLayerMD5": "be74673c0d4877ed0520266eb6621363.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-36",
+					"baseLayerID": 41,
+					"baseLayerMD5": "be74673c0d4877ed0520266eb6621363.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-37",
+					"baseLayerID": 42,
+					"baseLayerMD5": "91a0aefe22b9d8e256de1ee6d34e80f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-38",
+					"baseLayerID": 42,
+					"baseLayerMD5": "91a0aefe22b9d8e256de1ee6d34e80f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-39",
+					"baseLayerID": 43,
+					"baseLayerMD5": "728b6cc22adf5eb507734807ae0a9ced.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-40",
+					"baseLayerID": 43,
+					"baseLayerMD5": "728b6cc22adf5eb507734807ae0a9ced.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-41",
+					"baseLayerID": 44,
+					"baseLayerMD5": "869f0aff29e99821f2d48b757d63b7dd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-42",
+					"baseLayerID": 44,
+					"baseLayerMD5": "869f0aff29e99821f2d48b757d63b7dd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-43",
+					"baseLayerID": 45,
+					"baseLayerMD5": "b37cd85165aea8e6ae8d1738e27f20c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-44",
+					"baseLayerID": 45,
+					"baseLayerMD5": "b37cd85165aea8e6ae8d1738e27f20c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-45",
+					"baseLayerID": 46,
+					"baseLayerMD5": "ffba6f26df762ed0478eae3346a7a102.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-46",
+					"baseLayerID": 46,
+					"baseLayerMD5": "ffba6f26df762ed0478eae3346a7a102.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-47",
+					"baseLayerID": 47,
+					"baseLayerMD5": "57cfe488518dca02b6959265c8997080.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-48",
+					"baseLayerID": 47,
+					"baseLayerMD5": "57cfe488518dca02b6959265c8997080.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-49",
+					"baseLayerID": 48,
+					"baseLayerMD5": "b7379102d5d0b5f4bfe1d72104f28d6c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-50",
+					"baseLayerID": 48,
+					"baseLayerMD5": "b7379102d5d0b5f4bfe1d72104f28d6c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-51",
+					"baseLayerID": 49,
+					"baseLayerMD5": "7ee46bc1c79082fb69125fbd216907b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-52",
+					"baseLayerID": 49,
+					"baseLayerMD5": "7ee46bc1c79082fb69125fbd216907b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-53",
+					"baseLayerID": 50,
+					"baseLayerMD5": "d5c00b6fd62e8dffeeca5bb46638c00f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-54",
+					"baseLayerID": 50,
+					"baseLayerMD5": "d5c00b6fd62e8dffeeca5bb46638c00f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-55",
+					"baseLayerID": 51,
+					"baseLayerMD5": "22acf044160c45556e5c89fd265c403b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie-56",
+					"baseLayerID": 51,
+					"baseLayerMD5": "22acf044160c45556e5c89fd265c403b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 146,
+			"scratchY": 91,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Blover",
+			"scripts": [[72,
+					167,
+					[["whenGreenFlag"],
+						["gotoX:y:", -141, -49],
+						["lookLike:", "Blover-0"],
+						["doForever", [["nextCostume"]]]]],
+				[30,
+					80,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Blover-0",
+					"baseLayerID": 52,
+					"baseLayerMD5": "4f92a389a20732503e44ab76e0f05efb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-1",
+					"baseLayerID": 52,
+					"baseLayerMD5": "4f92a389a20732503e44ab76e0f05efb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-2",
+					"baseLayerID": 53,
+					"baseLayerMD5": "66b6c24f9956d04c8981eba2e3ce242e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-3",
+					"baseLayerID": 53,
+					"baseLayerMD5": "66b6c24f9956d04c8981eba2e3ce242e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-4",
+					"baseLayerID": 54,
+					"baseLayerMD5": "ddfc5314351a7b72bc21ee69378e1cf1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-5",
+					"baseLayerID": 54,
+					"baseLayerMD5": "ddfc5314351a7b72bc21ee69378e1cf1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-6",
+					"baseLayerID": 55,
+					"baseLayerMD5": "02dd5f0e081bf9d3cfce57b519895113.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-7",
+					"baseLayerID": 55,
+					"baseLayerMD5": "02dd5f0e081bf9d3cfce57b519895113.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-8",
+					"baseLayerID": 56,
+					"baseLayerMD5": "7b61ff98ce87ee9e7c858b939f4dd6f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-9",
+					"baseLayerID": 56,
+					"baseLayerMD5": "7b61ff98ce87ee9e7c858b939f4dd6f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-10",
+					"baseLayerID": 57,
+					"baseLayerMD5": "86c4bd9ca8ce70d4daa4104dbe8fda78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-11",
+					"baseLayerID": 57,
+					"baseLayerMD5": "86c4bd9ca8ce70d4daa4104dbe8fda78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-12",
+					"baseLayerID": 58,
+					"baseLayerMD5": "eec9c2f22448aa5535201db91fa5ec44.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-13",
+					"baseLayerID": 58,
+					"baseLayerMD5": "eec9c2f22448aa5535201db91fa5ec44.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-14",
+					"baseLayerID": 59,
+					"baseLayerMD5": "8c11b713775e48cea021abc4125c1962.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-15",
+					"baseLayerID": 59,
+					"baseLayerMD5": "8c11b713775e48cea021abc4125c1962.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-16",
+					"baseLayerID": 60,
+					"baseLayerMD5": "49b4b565838d897e1609e277899cbaed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-17",
+					"baseLayerID": 60,
+					"baseLayerMD5": "49b4b565838d897e1609e277899cbaed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-18",
+					"baseLayerID": 61,
+					"baseLayerMD5": "38cdc9cda44682a32a34c13e002beff7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-19",
+					"baseLayerID": 61,
+					"baseLayerMD5": "38cdc9cda44682a32a34c13e002beff7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-20",
+					"baseLayerID": 62,
+					"baseLayerMD5": "47566368cb1750d1263818ecbe8646c5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-21",
+					"baseLayerID": 62,
+					"baseLayerMD5": "47566368cb1750d1263818ecbe8646c5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-22",
+					"baseLayerID": 63,
+					"baseLayerMD5": "d6982f318a23fa5b30711b4266fe8f26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-23",
+					"baseLayerID": 63,
+					"baseLayerMD5": "d6982f318a23fa5b30711b4266fe8f26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-24",
+					"baseLayerID": 64,
+					"baseLayerMD5": "8d9fcf221df13a8b63749769a1061a2c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-25",
+					"baseLayerID": 64,
+					"baseLayerMD5": "8d9fcf221df13a8b63749769a1061a2c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-26",
+					"baseLayerID": 65,
+					"baseLayerMD5": "c23d6c349a52206c447e93188d02e3e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-27",
+					"baseLayerID": 65,
+					"baseLayerMD5": "c23d6c349a52206c447e93188d02e3e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-28",
+					"baseLayerID": 66,
+					"baseLayerMD5": "5cf87504febeaeddf3d2c72ce9ee899e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-29",
+					"baseLayerID": 66,
+					"baseLayerMD5": "5cf87504febeaeddf3d2c72ce9ee899e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-30",
+					"baseLayerID": 67,
+					"baseLayerMD5": "9482127c5836b968cad89b0bcbf32f7b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-31",
+					"baseLayerID": 67,
+					"baseLayerMD5": "9482127c5836b968cad89b0bcbf32f7b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-32",
+					"baseLayerID": 68,
+					"baseLayerMD5": "742e1c26049c8270e8b5f1f81f73c7e5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-33",
+					"baseLayerID": 68,
+					"baseLayerMD5": "742e1c26049c8270e8b5f1f81f73c7e5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-34",
+					"baseLayerID": 69,
+					"baseLayerMD5": "96a38e2a00ddb562d27b3c432df8457b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-35",
+					"baseLayerID": 69,
+					"baseLayerMD5": "96a38e2a00ddb562d27b3c432df8457b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-36",
+					"baseLayerID": 70,
+					"baseLayerMD5": "3e20f35f973fe2b27b2b685846ac7a66.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-37",
+					"baseLayerID": 70,
+					"baseLayerMD5": "3e20f35f973fe2b27b2b685846ac7a66.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-38",
+					"baseLayerID": 71,
+					"baseLayerMD5": "d88ea69f7bd5257edcd0988562ee8391.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-39",
+					"baseLayerID": 71,
+					"baseLayerMD5": "d88ea69f7bd5257edcd0988562ee8391.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-40",
+					"baseLayerID": 72,
+					"baseLayerMD5": "a1bb675db11760303babf356cb40dc99.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-41",
+					"baseLayerID": 72,
+					"baseLayerMD5": "a1bb675db11760303babf356cb40dc99.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-42",
+					"baseLayerID": 73,
+					"baseLayerMD5": "981999417c6a82ff744feb9a9c2a565a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-43",
+					"baseLayerID": 73,
+					"baseLayerMD5": "981999417c6a82ff744feb9a9c2a565a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-44",
+					"baseLayerID": 74,
+					"baseLayerMD5": "bf776a0de480a199648a2bc6fbb69b1a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-45",
+					"baseLayerID": 74,
+					"baseLayerMD5": "bf776a0de480a199648a2bc6fbb69b1a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-46",
+					"baseLayerID": 75,
+					"baseLayerMD5": "2737d756038617e58ff44d88103b81a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-47",
+					"baseLayerID": 75,
+					"baseLayerMD5": "2737d756038617e58ff44d88103b81a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-48",
+					"baseLayerID": 76,
+					"baseLayerMD5": "5ed53716410605ed4c4b0c9abf168f9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-49",
+					"baseLayerID": 76,
+					"baseLayerMD5": "5ed53716410605ed4c4b0c9abf168f9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-50",
+					"baseLayerID": 77,
+					"baseLayerMD5": "3718a5dfa4072d7b21113ec30de6043d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-51",
+					"baseLayerID": 77,
+					"baseLayerMD5": "3718a5dfa4072d7b21113ec30de6043d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-52",
+					"baseLayerID": 78,
+					"baseLayerMD5": "f5c57cdb011b5982c8bc9f934c942a8b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-53",
+					"baseLayerID": 78,
+					"baseLayerMD5": "f5c57cdb011b5982c8bc9f934c942a8b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-54",
+					"baseLayerID": 79,
+					"baseLayerMD5": "0e62d6ac010f6a8b690c0e345f4add11.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-55",
+					"baseLayerID": 79,
+					"baseLayerMD5": "0e62d6ac010f6a8b690c0e345f4add11.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-56",
+					"baseLayerID": 80,
+					"baseLayerMD5": "fb894ef1b54667b15d4e9a228ca6bb58.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-57",
+					"baseLayerID": 80,
+					"baseLayerMD5": "fb894ef1b54667b15d4e9a228ca6bb58.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-58",
+					"baseLayerID": 81,
+					"baseLayerMD5": "c7bc11ba8326aa7402c442fe19b6af92.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-59",
+					"baseLayerID": 81,
+					"baseLayerMD5": "c7bc11ba8326aa7402c442fe19b6af92.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-60",
+					"baseLayerID": 82,
+					"baseLayerMD5": "6cdea48b19d25d47f196f481639e9379.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-61",
+					"baseLayerID": 82,
+					"baseLayerMD5": "6cdea48b19d25d47f196f481639e9379.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-62",
+					"baseLayerID": 83,
+					"baseLayerMD5": "200a3fde3bfcbc2d92cfad49aa90c4ca.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-63",
+					"baseLayerID": 83,
+					"baseLayerMD5": "200a3fde3bfcbc2d92cfad49aa90c4ca.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-64",
+					"baseLayerID": 84,
+					"baseLayerMD5": "966f23a4c338ce70684d7c1af16d78f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-65",
+					"baseLayerID": 84,
+					"baseLayerMD5": "966f23a4c338ce70684d7c1af16d78f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-66",
+					"baseLayerID": 85,
+					"baseLayerMD5": "83e17fd2ef106870ccb5c4f0dac623f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-67",
+					"baseLayerID": 85,
+					"baseLayerMD5": "83e17fd2ef106870ccb5c4f0dac623f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-68",
+					"baseLayerID": 86,
+					"baseLayerMD5": "8fc30daf4d6a4bf153d38a2934fdb1e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-69",
+					"baseLayerID": 86,
+					"baseLayerMD5": "8fc30daf4d6a4bf153d38a2934fdb1e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-70",
+					"baseLayerID": 87,
+					"baseLayerMD5": "a4e74b8a5bfa0735141a81841f81c6ec.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-71",
+					"baseLayerID": 87,
+					"baseLayerMD5": "a4e74b8a5bfa0735141a81841f81c6ec.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-72",
+					"baseLayerID": 88,
+					"baseLayerMD5": "b1c6a3bd881f5559e514e7f86203ef12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-73",
+					"baseLayerID": 88,
+					"baseLayerMD5": "b1c6a3bd881f5559e514e7f86203ef12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-74",
+					"baseLayerID": 89,
+					"baseLayerMD5": "6eb2c643278d5b5fb2b14aa85e8bd9aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-75",
+					"baseLayerID": 89,
+					"baseLayerMD5": "6eb2c643278d5b5fb2b14aa85e8bd9aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-76",
+					"baseLayerID": 90,
+					"baseLayerMD5": "f308ae91d1e29514fd404e8fffa95e1b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-77",
+					"baseLayerID": 90,
+					"baseLayerMD5": "f308ae91d1e29514fd404e8fffa95e1b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-78",
+					"baseLayerID": 91,
+					"baseLayerMD5": "d0ebc192674502c54dcfb6bbbc353937.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-79",
+					"baseLayerID": 91,
+					"baseLayerMD5": "d0ebc192674502c54dcfb6bbbc353937.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-80",
+					"baseLayerID": 92,
+					"baseLayerMD5": "8b8d48fbc6a294de37c3147feee5d19f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-81",
+					"baseLayerID": 92,
+					"baseLayerMD5": "8b8d48fbc6a294de37c3147feee5d19f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-82",
+					"baseLayerID": 93,
+					"baseLayerMD5": "88c9f88d72e04bc325a3452c7a3da92d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-83",
+					"baseLayerID": 93,
+					"baseLayerMD5": "88c9f88d72e04bc325a3452c7a3da92d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-84",
+					"baseLayerID": 94,
+					"baseLayerMD5": "4f6beb8318a752144f93d2b6a604c4f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-85",
+					"baseLayerID": 94,
+					"baseLayerMD5": "4f6beb8318a752144f93d2b6a604c4f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-86",
+					"baseLayerID": 95,
+					"baseLayerMD5": "fbaa9fd884fcc06db49e6d05fa0072f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-87",
+					"baseLayerID": 95,
+					"baseLayerMD5": "fbaa9fd884fcc06db49e6d05fa0072f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-88",
+					"baseLayerID": 96,
+					"baseLayerMD5": "aa019814574749880655c7c959c08f57.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-89",
+					"baseLayerID": 96,
+					"baseLayerMD5": "aa019814574749880655c7c959c08f57.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-90",
+					"baseLayerID": 97,
+					"baseLayerMD5": "3dcd65a72a72c65b2d5680006889c21e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-91",
+					"baseLayerID": 97,
+					"baseLayerMD5": "3dcd65a72a72c65b2d5680006889c21e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-92",
+					"baseLayerID": 98,
+					"baseLayerMD5": "33abc4c010461b1918ffdbe9e2fa78b3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-93",
+					"baseLayerID": 98,
+					"baseLayerMD5": "33abc4c010461b1918ffdbe9e2fa78b3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-94",
+					"baseLayerID": 99,
+					"baseLayerMD5": "b149048c8864c94aa06f892cb60dd011.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-95",
+					"baseLayerID": 99,
+					"baseLayerMD5": "b149048c8864c94aa06f892cb60dd011.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-96",
+					"baseLayerID": 100,
+					"baseLayerMD5": "6c97b03265586182a055036cdf9554ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-97",
+					"baseLayerID": 100,
+					"baseLayerMD5": "6c97b03265586182a055036cdf9554ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-98",
+					"baseLayerID": 101,
+					"baseLayerMD5": "2537bf78ae0f771df190c3f08bb2ee23.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-99",
+					"baseLayerID": 101,
+					"baseLayerMD5": "2537bf78ae0f771df190c3f08bb2ee23.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Blover-100",
+					"baseLayerID": 102,
+					"baseLayerMD5": "5f8c3344fe602cbd52d45eef33d8af06.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 51,
+			"scratchX": -141,
+			"scratchY": -49,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Conehead Zombie",
+			"scripts": [[38,
+					138,
+					[["whenGreenFlag"],
+						["gotoX:y:", 56, -98],
+						["lookLike:", "Conehead Zombie-0"],
+						["doForever", [["nextCostume"]]]]],
+				[122,
+					176,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Conehead Zombie-0",
+					"baseLayerID": 103,
+					"baseLayerMD5": "2327a13a37421397e6fe18c8c6bac25f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-1",
+					"baseLayerID": 104,
+					"baseLayerMD5": "0a9bac17467562d7f268000e68740178.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-2",
+					"baseLayerID": 104,
+					"baseLayerMD5": "0a9bac17467562d7f268000e68740178.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-3",
+					"baseLayerID": 105,
+					"baseLayerMD5": "6f2dec6190fbd059137197b516cd7a97.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-4",
+					"baseLayerID": 105,
+					"baseLayerMD5": "6f2dec6190fbd059137197b516cd7a97.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-5",
+					"baseLayerID": 106,
+					"baseLayerMD5": "259f861be6a95a75169c08838e004b72.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-6",
+					"baseLayerID": 106,
+					"baseLayerMD5": "259f861be6a95a75169c08838e004b72.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-7",
+					"baseLayerID": 107,
+					"baseLayerMD5": "b52339b13aaeb05d3fb17921d09b7dd7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-8",
+					"baseLayerID": 107,
+					"baseLayerMD5": "b52339b13aaeb05d3fb17921d09b7dd7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-9",
+					"baseLayerID": 108,
+					"baseLayerMD5": "b40d23477e5cddc027a2c80e90d5420a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-10",
+					"baseLayerID": 108,
+					"baseLayerMD5": "b40d23477e5cddc027a2c80e90d5420a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-11",
+					"baseLayerID": 109,
+					"baseLayerMD5": "ea7392644c7f4dae616170f4828be98d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-12",
+					"baseLayerID": 109,
+					"baseLayerMD5": "ea7392644c7f4dae616170f4828be98d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-13",
+					"baseLayerID": 110,
+					"baseLayerMD5": "e5c2ac88d62fbb0d7219a6d71f4920ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-14",
+					"baseLayerID": 110,
+					"baseLayerMD5": "e5c2ac88d62fbb0d7219a6d71f4920ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-15",
+					"baseLayerID": 111,
+					"baseLayerMD5": "6c730047c09a8e59e72add33bcf1d4cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-16",
+					"baseLayerID": 111,
+					"baseLayerMD5": "6c730047c09a8e59e72add33bcf1d4cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-17",
+					"baseLayerID": 112,
+					"baseLayerMD5": "e53fed71d3d1f77abd586a92980817ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-18",
+					"baseLayerID": 112,
+					"baseLayerMD5": "e53fed71d3d1f77abd586a92980817ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-19",
+					"baseLayerID": 113,
+					"baseLayerMD5": "80a9f185735342fdd45e9042c47448c3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-20",
+					"baseLayerID": 113,
+					"baseLayerMD5": "80a9f185735342fdd45e9042c47448c3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-21",
+					"baseLayerID": 114,
+					"baseLayerMD5": "9e24f636f3eff932674d10f2b586ce62.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-22",
+					"baseLayerID": 114,
+					"baseLayerMD5": "9e24f636f3eff932674d10f2b586ce62.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-23",
+					"baseLayerID": 115,
+					"baseLayerMD5": "d9bae96bfbe59a9347faec531cf51218.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-24",
+					"baseLayerID": 115,
+					"baseLayerMD5": "d9bae96bfbe59a9347faec531cf51218.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-25",
+					"baseLayerID": 116,
+					"baseLayerMD5": "0d10c893fcc081ec80cb73c6c190d8ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-26",
+					"baseLayerID": 116,
+					"baseLayerMD5": "0d10c893fcc081ec80cb73c6c190d8ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-27",
+					"baseLayerID": 117,
+					"baseLayerMD5": "4c21c177c4b959479ccd73772bd60a5f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-28",
+					"baseLayerID": 117,
+					"baseLayerMD5": "4c21c177c4b959479ccd73772bd60a5f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-29",
+					"baseLayerID": 118,
+					"baseLayerMD5": "afd4734ea363d8bcd5f85db7b7d99f3a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-30",
+					"baseLayerID": 118,
+					"baseLayerMD5": "afd4734ea363d8bcd5f85db7b7d99f3a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-31",
+					"baseLayerID": 119,
+					"baseLayerMD5": "61bc59b7d496fa2e61829a5f94b14262.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 188,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Conehead Zombie-32",
+					"baseLayerID": 120,
+					"baseLayerMD5": "a1aa8ef32dc0df8ef621eab05806e6be.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-33",
+					"baseLayerID": 121,
+					"baseLayerMD5": "657430b4eea3ee36c0b9d5c568d81d12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Conehead Zombie-34",
+					"baseLayerID": 121,
+					"baseLayerMD5": "657430b4eea3ee36c0b9d5c568d81d12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 18,
+			"scratchX": 56,
+			"scratchY": -98,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sunflower",
+			"scripts": [[77,
+					82,
+					[["whenGreenFlag"],
+						["gotoX:y:", 3, 139],
+						["lookLike:", "Sunflower-0"],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.01]]]]],
+				[11,
+					247,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Sunflower-0",
+					"baseLayerID": 122,
+					"baseLayerMD5": "de6a3fda69f785f110a22b14af976c51.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "Sunflower-1",
+					"baseLayerID": 123,
+					"baseLayerMD5": "eae3594aca6d6d621285f2a4a4e5d497.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-2",
+					"baseLayerID": 124,
+					"baseLayerMD5": "1b6e23b5e6d27b5017585583dbafba10.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-3",
+					"baseLayerID": 125,
+					"baseLayerMD5": "cf00cf8bf85f3ae5410c46b20c6f0768.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-4",
+					"baseLayerID": 126,
+					"baseLayerMD5": "fe1d13d2173279d1f2cb1e6efa91003d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-5",
+					"baseLayerID": 127,
+					"baseLayerMD5": "109401af37b23f2e553bca02dc46d795.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-6",
+					"baseLayerID": 128,
+					"baseLayerMD5": "817466dd593d0d44383a1611529e6c90.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-7",
+					"baseLayerID": 129,
+					"baseLayerMD5": "eedd219cf5b62e7a91d02d1f1541793b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-8",
+					"baseLayerID": 130,
+					"baseLayerMD5": "f2b6507adcc035b193ff3aba2c84f8f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-9",
+					"baseLayerID": 131,
+					"baseLayerMD5": "e344cfc2a51e0c95ba909e3464e0552a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-10",
+					"baseLayerID": 132,
+					"baseLayerMD5": "e1acb9b2d7dca3666b0386a4110b2b47.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-11",
+					"baseLayerID": 133,
+					"baseLayerMD5": "2939d45ec4971ab7f763fd05dd3c688f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-12",
+					"baseLayerID": 134,
+					"baseLayerMD5": "2d1a179e51ad770ad662eb252beed48e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-13",
+					"baseLayerID": 135,
+					"baseLayerMD5": "fc770902708b9f5f58397f0a9641223a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-14",
+					"baseLayerID": 136,
+					"baseLayerMD5": "a7b1a2fa8449ad58c3c26c811a3c3208.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-15",
+					"baseLayerID": 137,
+					"baseLayerMD5": "f0725142891ebcbfeded9f9e681c74a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-16",
+					"baseLayerID": 138,
+					"baseLayerMD5": "1e38a87567060c204159ba97c4f1058a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-17",
+					"baseLayerID": 139,
+					"baseLayerMD5": "f135eb3b30b774109d9a0fa5aaa982a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-18",
+					"baseLayerID": 140,
+					"baseLayerMD5": "ca138d8c53c4440a2518381995b9d852.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-19",
+					"baseLayerID": 141,
+					"baseLayerMD5": "232882041aefaedc51129e78eb686382.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-20",
+					"baseLayerID": 142,
+					"baseLayerMD5": "0ccfd77bd41c091a1415de5c6705507a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-21",
+					"baseLayerID": 143,
+					"baseLayerMD5": "80d3737959533310b1b67b81a9545407.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-22",
+					"baseLayerID": 144,
+					"baseLayerMD5": "324839421206464caf70afc42137cbbd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-23",
+					"baseLayerID": 145,
+					"baseLayerMD5": "76b534bab048f95513c3295c7912a8c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-24",
+					"baseLayerID": 146,
+					"baseLayerMD5": "9f7420488ce26feebaf3c86e898d2652.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-25",
+					"baseLayerID": 147,
+					"baseLayerMD5": "e62c2cd427c8f43e2df6c089358d5295.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-26",
+					"baseLayerID": 148,
+					"baseLayerMD5": "4eb629e124acb682bfbf6187876bbb71.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-27",
+					"baseLayerID": 149,
+					"baseLayerMD5": "fd9aca33c5b1f09cefdbe8bc0028128c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-28",
+					"baseLayerID": 150,
+					"baseLayerMD5": "9ff497f1b6ce8dc0b6076924dd9194d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 72,
+					"rotationCenterY": 58
+				},
+				{
+					"costumeName": "Sunflower-29",
+					"baseLayerID": 151,
+					"baseLayerMD5": "a703b181a2d1a11b521e0f2b740484ae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-30",
+					"baseLayerID": 152,
+					"baseLayerMD5": "ae449fe8376aa929f7c25edd71bc3336.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-31",
+					"baseLayerID": 153,
+					"baseLayerMD5": "be663574af5623ba290d4e514d10d2dd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-32",
+					"baseLayerID": 154,
+					"baseLayerMD5": "a1815b02f9432bf9e3a287eeeb14f1e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-33",
+					"baseLayerID": 155,
+					"baseLayerMD5": "db42721bcb7eab79b30cd7c98ad2f9f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-34",
+					"baseLayerID": 156,
+					"baseLayerMD5": "ca69457df849e63d8913f401bde9c9cd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-35",
+					"baseLayerID": 157,
+					"baseLayerMD5": "48f47250171b585a9ede25e5d788a2a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-36",
+					"baseLayerID": 158,
+					"baseLayerMD5": "8d1618e1f0364d70daa17658c9c03593.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-37",
+					"baseLayerID": 159,
+					"baseLayerMD5": "fb9dae1b8ed5313a6ffe73a37068d8e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-38",
+					"baseLayerID": 160,
+					"baseLayerMD5": "342f40ea18f3dd93a0488c809b5e9560.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-39",
+					"baseLayerID": 161,
+					"baseLayerMD5": "918537983e4f7cc61dac17f0bd860ef6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-40",
+					"baseLayerID": 162,
+					"baseLayerMD5": "bf74821e2ba39a060e9a7f9bc7fd32ee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-41",
+					"baseLayerID": 163,
+					"baseLayerMD5": "ad576fce5b4654ff0f4a070611b719d5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-42",
+					"baseLayerID": 137,
+					"baseLayerMD5": "f0725142891ebcbfeded9f9e681c74a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-43",
+					"baseLayerID": 138,
+					"baseLayerMD5": "1e38a87567060c204159ba97c4f1058a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-44",
+					"baseLayerID": 139,
+					"baseLayerMD5": "f135eb3b30b774109d9a0fa5aaa982a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-45",
+					"baseLayerID": 140,
+					"baseLayerMD5": "ca138d8c53c4440a2518381995b9d852.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-46",
+					"baseLayerID": 141,
+					"baseLayerMD5": "232882041aefaedc51129e78eb686382.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-47",
+					"baseLayerID": 142,
+					"baseLayerMD5": "0ccfd77bd41c091a1415de5c6705507a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-48",
+					"baseLayerID": 143,
+					"baseLayerMD5": "80d3737959533310b1b67b81a9545407.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-49",
+					"baseLayerID": 144,
+					"baseLayerMD5": "324839421206464caf70afc42137cbbd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-50",
+					"baseLayerID": 145,
+					"baseLayerMD5": "76b534bab048f95513c3295c7912a8c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-51",
+					"baseLayerID": 146,
+					"baseLayerMD5": "9f7420488ce26feebaf3c86e898d2652.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-52",
+					"baseLayerID": 147,
+					"baseLayerMD5": "e62c2cd427c8f43e2df6c089358d5295.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Sunflower-53",
+					"baseLayerID": 148,
+					"baseLayerMD5": "4eb629e124acb682bfbf6187876bbb71.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 36
+				}],
+			"currentCostumeIndex": 20,
+			"scratchX": 3,
+			"scratchY": 139,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "ice1",
+			"scripts": [[89,
+					80,
+					[["whenGreenFlag"],
+						["gotoX:y:", 4, 51],
+						["lookLike:", "ice1"],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.05]]]]],
+				[80,
+					284,
+					[["whenGreenFlag"],
+						["setVar:to:", "page", "1"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "1"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ice1",
+					"baseLayerID": 164,
+					"baseLayerMD5": "3f3cdc08a69c02824ccf8976fdfec5bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "ice2",
+					"baseLayerID": 165,
+					"baseLayerMD5": "947f701e94562068f82ee6263d457c99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 88
+				},
+				{
+					"costumeName": "ice3",
+					"baseLayerID": 166,
+					"baseLayerMD5": "b5763ad2604e8a01435200c3977780e0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "ice4",
+					"baseLayerID": 165,
+					"baseLayerMD5": "947f701e94562068f82ee6263d457c99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 88
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 4,
+			"scratchY": 51,
+			"scale": 0.9,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Dancing Zombie",
+			"scripts": [[72,
+					155,
+					[["whenGreenFlag"],
+						["gotoX:y:", -139, 86],
+						["lookLike:", "Dancing Zombie-0"],
+						["doForever", [["nextCostume"]]]]],
+				[60.25,
+					247,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "2"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Dancing Zombie-0",
+					"baseLayerID": 167,
+					"baseLayerMD5": "034677f9562c993a63ae738a17194677.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-1",
+					"baseLayerID": 168,
+					"baseLayerMD5": "c104135f391f0bd15952010cc87cbd59.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-2",
+					"baseLayerID": 168,
+					"baseLayerMD5": "c104135f391f0bd15952010cc87cbd59.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-3",
+					"baseLayerID": 169,
+					"baseLayerMD5": "8275a3a442acd2eafa986d46e5f779f6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-4",
+					"baseLayerID": 169,
+					"baseLayerMD5": "8275a3a442acd2eafa986d46e5f779f6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-5",
+					"baseLayerID": 170,
+					"baseLayerMD5": "21ed63ac523ab0a1610d9b94c4d4acfc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-6",
+					"baseLayerID": 170,
+					"baseLayerMD5": "21ed63ac523ab0a1610d9b94c4d4acfc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-7",
+					"baseLayerID": 171,
+					"baseLayerMD5": "c01dfc230b71a2883575c549cb719307.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-8",
+					"baseLayerID": 171,
+					"baseLayerMD5": "c01dfc230b71a2883575c549cb719307.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-9",
+					"baseLayerID": 172,
+					"baseLayerMD5": "9f59dd947ba6e8ea1dc4d55ecda75cb8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-10",
+					"baseLayerID": 172,
+					"baseLayerMD5": "9f59dd947ba6e8ea1dc4d55ecda75cb8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-11",
+					"baseLayerID": 173,
+					"baseLayerMD5": "64ed9cd41416b37d905d35f2b79af90a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-12",
+					"baseLayerID": 173,
+					"baseLayerMD5": "64ed9cd41416b37d905d35f2b79af90a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-13",
+					"baseLayerID": 174,
+					"baseLayerMD5": "2dd26c9eddcccbd405c9df9c473b117f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-14",
+					"baseLayerID": 174,
+					"baseLayerMD5": "2dd26c9eddcccbd405c9df9c473b117f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-15",
+					"baseLayerID": 175,
+					"baseLayerMD5": "a86a56c0bf4c32297141b41577687bcb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-16",
+					"baseLayerID": 175,
+					"baseLayerMD5": "a86a56c0bf4c32297141b41577687bcb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-17",
+					"baseLayerID": 176,
+					"baseLayerMD5": "d5f4818b67857947a3319a1cd9e8219d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-18",
+					"baseLayerID": 176,
+					"baseLayerMD5": "d5f4818b67857947a3319a1cd9e8219d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-19",
+					"baseLayerID": 177,
+					"baseLayerMD5": "7df1c4ef12f3418c779edcbc38da996b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-20",
+					"baseLayerID": 177,
+					"baseLayerMD5": "7df1c4ef12f3418c779edcbc38da996b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-21",
+					"baseLayerID": 178,
+					"baseLayerMD5": "f631179110e8defbf9b3e8f1e06d54da.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-22",
+					"baseLayerID": 178,
+					"baseLayerMD5": "f631179110e8defbf9b3e8f1e06d54da.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-23",
+					"baseLayerID": 179,
+					"baseLayerMD5": "d0ce3ddd3caf0c0004debb12b005e468.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-24",
+					"baseLayerID": 179,
+					"baseLayerMD5": "d0ce3ddd3caf0c0004debb12b005e468.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-25",
+					"baseLayerID": 180,
+					"baseLayerMD5": "2deb0cd4a461f142341eba550780795f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-26",
+					"baseLayerID": 180,
+					"baseLayerMD5": "2deb0cd4a461f142341eba550780795f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-27",
+					"baseLayerID": 181,
+					"baseLayerMD5": "4e048c15ab82904f56de554ad0dac7ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-28",
+					"baseLayerID": 181,
+					"baseLayerMD5": "4e048c15ab82904f56de554ad0dac7ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-29",
+					"baseLayerID": 182,
+					"baseLayerMD5": "c94f69c03a025897b8fe8c70535263b8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-30",
+					"baseLayerID": 182,
+					"baseLayerMD5": "c94f69c03a025897b8fe8c70535263b8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-31",
+					"baseLayerID": 183,
+					"baseLayerMD5": "977a772b648e2e9c095faf2e4c35186a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-32",
+					"baseLayerID": 183,
+					"baseLayerMD5": "977a772b648e2e9c095faf2e4c35186a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-33",
+					"baseLayerID": 184,
+					"baseLayerMD5": "2e02f39a6466b93d453e013f01a0e0f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-34",
+					"baseLayerID": 184,
+					"baseLayerMD5": "2e02f39a6466b93d453e013f01a0e0f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-35",
+					"baseLayerID": 185,
+					"baseLayerMD5": "54483963533e80a00ab060c0dc142176.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-36",
+					"baseLayerID": 185,
+					"baseLayerMD5": "54483963533e80a00ab060c0dc142176.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-37",
+					"baseLayerID": 186,
+					"baseLayerMD5": "1f7724f5b9d477232f4468a84bbec807.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-38",
+					"baseLayerID": 186,
+					"baseLayerMD5": "1f7724f5b9d477232f4468a84bbec807.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-39",
+					"baseLayerID": 187,
+					"baseLayerMD5": "ea645fd42201c1194609a46e8fea35c2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-40",
+					"baseLayerID": 187,
+					"baseLayerMD5": "ea645fd42201c1194609a46e8fea35c2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-41",
+					"baseLayerID": 188,
+					"baseLayerMD5": "c798db975617bd6055af8b97574d2780.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-42",
+					"baseLayerID": 188,
+					"baseLayerMD5": "c798db975617bd6055af8b97574d2780.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-43",
+					"baseLayerID": 189,
+					"baseLayerMD5": "723b8c20191cd61f3a32935efbafde2a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-44",
+					"baseLayerID": 189,
+					"baseLayerMD5": "723b8c20191cd61f3a32935efbafde2a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-45",
+					"baseLayerID": 190,
+					"baseLayerMD5": "2223ef8984b051e05ac170c863217984.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-46",
+					"baseLayerID": 190,
+					"baseLayerMD5": "2223ef8984b051e05ac170c863217984.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-47",
+					"baseLayerID": 191,
+					"baseLayerMD5": "45d58cb44ec42432c0dcf2b6bd706eb1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-48",
+					"baseLayerID": 191,
+					"baseLayerMD5": "45d58cb44ec42432c0dcf2b6bd706eb1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-49",
+					"baseLayerID": 192,
+					"baseLayerMD5": "9536d69d1ce33b6ec586be1b23bbeedc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-50",
+					"baseLayerID": 192,
+					"baseLayerMD5": "9536d69d1ce33b6ec586be1b23bbeedc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-51",
+					"baseLayerID": 193,
+					"baseLayerMD5": "9f8c8bbb8c38831ddaea2dcf42e9fdcd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-52",
+					"baseLayerID": 193,
+					"baseLayerMD5": "9f8c8bbb8c38831ddaea2dcf42e9fdcd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-53",
+					"baseLayerID": 194,
+					"baseLayerMD5": "feef480ebcb4b3e1f0b2f5f996b61139.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-54",
+					"baseLayerID": 194,
+					"baseLayerMD5": "feef480ebcb4b3e1f0b2f5f996b61139.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-55",
+					"baseLayerID": 195,
+					"baseLayerMD5": "d633e932e55777b57dbf2fc16cd38672.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-56",
+					"baseLayerID": 195,
+					"baseLayerMD5": "d633e932e55777b57dbf2fc16cd38672.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-57",
+					"baseLayerID": 196,
+					"baseLayerMD5": "4ff473caf30ea04b6dabb1b7dd0bc3a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-58",
+					"baseLayerID": 196,
+					"baseLayerMD5": "4ff473caf30ea04b6dabb1b7dd0bc3a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-59",
+					"baseLayerID": 197,
+					"baseLayerMD5": "42b960711148d7d79372a266b1f46368.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-60",
+					"baseLayerID": 197,
+					"baseLayerMD5": "42b960711148d7d79372a266b1f46368.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-61",
+					"baseLayerID": 198,
+					"baseLayerMD5": "0eb433cef5fb680cfad1786f7a0b2790.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-62",
+					"baseLayerID": 198,
+					"baseLayerMD5": "0eb433cef5fb680cfad1786f7a0b2790.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-63",
+					"baseLayerID": 199,
+					"baseLayerMD5": "817370091aaf9f8d9189e2238e11baae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-64",
+					"baseLayerID": 199,
+					"baseLayerMD5": "817370091aaf9f8d9189e2238e11baae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-65",
+					"baseLayerID": 200,
+					"baseLayerMD5": "d411f40e9870fc1ece874b76a762421c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-66",
+					"baseLayerID": 200,
+					"baseLayerMD5": "d411f40e9870fc1ece874b76a762421c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Dancing Zombie-67",
+					"baseLayerID": 201,
+					"baseLayerMD5": "60f0a108ce74134a0058ec52b05e3c5b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -139,
+			"scratchY": 86,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Backup Dancer",
+			"scripts": [[73,
+					73,
+					[["whenGreenFlag"],
+						["gotoX:y:", 49, 87],
+						["lookLike:", "Backup Dancer-0"],
+						["doForever", [["nextCostume"]]]]],
+				[95.5,
+					241,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "2"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Backup Dancer-0",
+					"baseLayerID": 202,
+					"baseLayerMD5": "2f328685c25dc18a896a5982ee597e82.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-1",
+					"baseLayerID": 203,
+					"baseLayerMD5": "01181396769ff2b73ecd190cb955b493.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-2",
+					"baseLayerID": 203,
+					"baseLayerMD5": "01181396769ff2b73ecd190cb955b493.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-3",
+					"baseLayerID": 204,
+					"baseLayerMD5": "baf38e01ab2062f2bcfb8de7d038b626.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-4",
+					"baseLayerID": 204,
+					"baseLayerMD5": "baf38e01ab2062f2bcfb8de7d038b626.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-5",
+					"baseLayerID": 205,
+					"baseLayerMD5": "0374325aa7fef284d3b745fdce4f42e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-6",
+					"baseLayerID": 205,
+					"baseLayerMD5": "0374325aa7fef284d3b745fdce4f42e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-7",
+					"baseLayerID": 206,
+					"baseLayerMD5": "00e3775960f75d9d74397efe557e81e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-8",
+					"baseLayerID": 206,
+					"baseLayerMD5": "00e3775960f75d9d74397efe557e81e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-9",
+					"baseLayerID": 207,
+					"baseLayerMD5": "8f15a22b121838ec3a0f001c118ecffd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-10",
+					"baseLayerID": 207,
+					"baseLayerMD5": "8f15a22b121838ec3a0f001c118ecffd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-11",
+					"baseLayerID": 208,
+					"baseLayerMD5": "14932e5e5c97e8ec44205d4897cb643b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-12",
+					"baseLayerID": 208,
+					"baseLayerMD5": "14932e5e5c97e8ec44205d4897cb643b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-13",
+					"baseLayerID": 209,
+					"baseLayerMD5": "1ef05c131f840c20780e77a87a4a17db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-14",
+					"baseLayerID": 209,
+					"baseLayerMD5": "1ef05c131f840c20780e77a87a4a17db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-15",
+					"baseLayerID": 210,
+					"baseLayerMD5": "19abc15005be9b981ad73b9787daa178.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-16",
+					"baseLayerID": 210,
+					"baseLayerMD5": "19abc15005be9b981ad73b9787daa178.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-17",
+					"baseLayerID": 211,
+					"baseLayerMD5": "a3954496c614bf2ce94e60256196ce27.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-18",
+					"baseLayerID": 211,
+					"baseLayerMD5": "a3954496c614bf2ce94e60256196ce27.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-19",
+					"baseLayerID": 212,
+					"baseLayerMD5": "369df72a8c1600cb42439549fd746e16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-20",
+					"baseLayerID": 212,
+					"baseLayerMD5": "369df72a8c1600cb42439549fd746e16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-21",
+					"baseLayerID": 213,
+					"baseLayerMD5": "d985cdabb58eab3d577a55623b7c434f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-22",
+					"baseLayerID": 213,
+					"baseLayerMD5": "d985cdabb58eab3d577a55623b7c434f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-23",
+					"baseLayerID": 214,
+					"baseLayerMD5": "49e46e4d6af64683e48e653b72b6e46a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-24",
+					"baseLayerID": 214,
+					"baseLayerMD5": "49e46e4d6af64683e48e653b72b6e46a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				},
+				{
+					"costumeName": "Backup Dancer-25",
+					"baseLayerID": 215,
+					"baseLayerMD5": "54d7db8b2b9edf867407c4a39205ab24.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 89
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 49,
+			"scratchY": 87,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Gloom shroom",
+			"scripts": [[52,
+					254,
+					[["whenGreenFlag"],
+						["gotoX:y:", -140, -76],
+						["lookLike:", "Gloom shroom-0"],
+						["doForever", [["nextCostume"]]]]],
+				[56,
+					62,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "2"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Gloom shroom-0",
+					"baseLayerID": 216,
+					"baseLayerMD5": "6f334c94a43ff85f30e6964d1e6b2c9a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-1",
+					"baseLayerID": 217,
+					"baseLayerMD5": "a8d36a7892bddd7b971d07bc0fa14ac6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-2",
+					"baseLayerID": 217,
+					"baseLayerMD5": "a8d36a7892bddd7b971d07bc0fa14ac6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-3",
+					"baseLayerID": 218,
+					"baseLayerMD5": "18a3bfb531f896a0d7c5cc541b69ad3c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-4",
+					"baseLayerID": 218,
+					"baseLayerMD5": "18a3bfb531f896a0d7c5cc541b69ad3c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-5",
+					"baseLayerID": 219,
+					"baseLayerMD5": "5de9eed971bb9371b950289743128888.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-6",
+					"baseLayerID": 219,
+					"baseLayerMD5": "5de9eed971bb9371b950289743128888.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-7",
+					"baseLayerID": 220,
+					"baseLayerMD5": "d7cda91bb2d46e796e3dacee47079e91.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-8",
+					"baseLayerID": 220,
+					"baseLayerMD5": "d7cda91bb2d46e796e3dacee47079e91.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-9",
+					"baseLayerID": 221,
+					"baseLayerMD5": "24c563938597285f82c2b32ae148edd4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-10",
+					"baseLayerID": 221,
+					"baseLayerMD5": "24c563938597285f82c2b32ae148edd4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-11",
+					"baseLayerID": 222,
+					"baseLayerMD5": "8a324a604d2561ca1cc19f4d83541a29.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-12",
+					"baseLayerID": 222,
+					"baseLayerMD5": "8a324a604d2561ca1cc19f4d83541a29.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-13",
+					"baseLayerID": 223,
+					"baseLayerMD5": "8fa30c215d66ffc516aba9bf6a9a2e46.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-14",
+					"baseLayerID": 223,
+					"baseLayerMD5": "8fa30c215d66ffc516aba9bf6a9a2e46.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-15",
+					"baseLayerID": 224,
+					"baseLayerMD5": "8a8a8e25dd64be1b49b70455c1a03e51.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-16",
+					"baseLayerID": 224,
+					"baseLayerMD5": "8a8a8e25dd64be1b49b70455c1a03e51.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-17",
+					"baseLayerID": 225,
+					"baseLayerMD5": "8ffedde1fddc1530b3cee5c0fabc734c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-18",
+					"baseLayerID": 225,
+					"baseLayerMD5": "8ffedde1fddc1530b3cee5c0fabc734c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-19",
+					"baseLayerID": 226,
+					"baseLayerMD5": "391d5fefa0c5bc00b199005e076645a7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-20",
+					"baseLayerID": 226,
+					"baseLayerMD5": "391d5fefa0c5bc00b199005e076645a7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-21",
+					"baseLayerID": 227,
+					"baseLayerMD5": "4fc42683a2bc3b4d736104d98e17e828.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-22",
+					"baseLayerID": 227,
+					"baseLayerMD5": "4fc42683a2bc3b4d736104d98e17e828.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-23",
+					"baseLayerID": 228,
+					"baseLayerMD5": "03fce935d7d907111db507c89e2568ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-24",
+					"baseLayerID": 228,
+					"baseLayerMD5": "03fce935d7d907111db507c89e2568ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-25",
+					"baseLayerID": 229,
+					"baseLayerMD5": "368def8efb512c4b3e7adfea6e8d7498.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-26",
+					"baseLayerID": 229,
+					"baseLayerMD5": "368def8efb512c4b3e7adfea6e8d7498.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-27",
+					"baseLayerID": 230,
+					"baseLayerMD5": "e6caf9d32edd1e7b8c8f1591fc7507f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-28",
+					"baseLayerID": 230,
+					"baseLayerMD5": "e6caf9d32edd1e7b8c8f1591fc7507f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-29",
+					"baseLayerID": 231,
+					"baseLayerMD5": "8fea3da9076583b905ce47c7c91754ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-30",
+					"baseLayerID": 231,
+					"baseLayerMD5": "8fea3da9076583b905ce47c7c91754ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-31",
+					"baseLayerID": 232,
+					"baseLayerMD5": "9d69ff579e585fa4271dc21f0cf51054.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-32",
+					"baseLayerID": 232,
+					"baseLayerMD5": "9d69ff579e585fa4271dc21f0cf51054.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-33",
+					"baseLayerID": 233,
+					"baseLayerMD5": "e30b9953f3bfa5cbaf98262ac4e8e212.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-34",
+					"baseLayerID": 233,
+					"baseLayerMD5": "e30b9953f3bfa5cbaf98262ac4e8e212.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Gloom shroom-35",
+					"baseLayerID": 234,
+					"baseLayerMD5": "fb1348f675ced37e1c41c51280cacc6b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -140,
+			"scratchY": -76,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Zombie Yeti",
+			"scripts": [[43,
+					159,
+					[["whenGreenFlag"],
+						["gotoX:y:", 48, -93],
+						["lookLike:", "Zombie Yeti-0"],
+						["doForever", [["nextCostume"]]]]],
+				[207,
+					228,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "2"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Zombie Yeti-0",
+					"baseLayerID": 235,
+					"baseLayerMD5": "5e49894c07ec96bce5d65e2a7051e846.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-1",
+					"baseLayerID": 236,
+					"baseLayerMD5": "5ef9c4deca6ea0a5370e04e61a70cb93.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-2",
+					"baseLayerID": 236,
+					"baseLayerMD5": "5ef9c4deca6ea0a5370e04e61a70cb93.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-3",
+					"baseLayerID": 237,
+					"baseLayerMD5": "70b825a72531097ae929c24128051802.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-4",
+					"baseLayerID": 237,
+					"baseLayerMD5": "70b825a72531097ae929c24128051802.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-5",
+					"baseLayerID": 238,
+					"baseLayerMD5": "333e6fdcb3732c91c6edd5cd2800f7db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-6",
+					"baseLayerID": 238,
+					"baseLayerMD5": "333e6fdcb3732c91c6edd5cd2800f7db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-7",
+					"baseLayerID": 239,
+					"baseLayerMD5": "35657c25c893d2449bfdd066b2d7465f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-8",
+					"baseLayerID": 239,
+					"baseLayerMD5": "35657c25c893d2449bfdd066b2d7465f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-9",
+					"baseLayerID": 240,
+					"baseLayerMD5": "07f7faa4e12ad83c59de8bdc1f06bb83.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-10",
+					"baseLayerID": 240,
+					"baseLayerMD5": "07f7faa4e12ad83c59de8bdc1f06bb83.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-11",
+					"baseLayerID": 241,
+					"baseLayerMD5": "93d62ab4e1870fd2b68c47c673e40fd9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-12",
+					"baseLayerID": 241,
+					"baseLayerMD5": "93d62ab4e1870fd2b68c47c673e40fd9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-13",
+					"baseLayerID": 242,
+					"baseLayerMD5": "343d9eed1ff238f0918c8782e0a6b4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-14",
+					"baseLayerID": 242,
+					"baseLayerMD5": "343d9eed1ff238f0918c8782e0a6b4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-15",
+					"baseLayerID": 243,
+					"baseLayerMD5": "4a00d29e8800fd20110f954211796651.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-16",
+					"baseLayerID": 243,
+					"baseLayerMD5": "4a00d29e8800fd20110f954211796651.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-17",
+					"baseLayerID": 244,
+					"baseLayerMD5": "fbea282821d9302ea1423035db0ea602.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-18",
+					"baseLayerID": 244,
+					"baseLayerMD5": "fbea282821d9302ea1423035db0ea602.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-19",
+					"baseLayerID": 245,
+					"baseLayerMD5": "fac8e3fb70f7e8db6c2df3822623fa24.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-20",
+					"baseLayerID": 245,
+					"baseLayerMD5": "fac8e3fb70f7e8db6c2df3822623fa24.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-21",
+					"baseLayerID": 246,
+					"baseLayerMD5": "135735c1b0e382edcf9e8f868e75eb8f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-22",
+					"baseLayerID": 246,
+					"baseLayerMD5": "135735c1b0e382edcf9e8f868e75eb8f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-23",
+					"baseLayerID": 247,
+					"baseLayerMD5": "686ffc3e2991b91fd848f4e58defd210.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-24",
+					"baseLayerID": 247,
+					"baseLayerMD5": "686ffc3e2991b91fd848f4e58defd210.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-25",
+					"baseLayerID": 248,
+					"baseLayerMD5": "328538d511b95ea27be1daea2aebeb87.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-26",
+					"baseLayerID": 248,
+					"baseLayerMD5": "328538d511b95ea27be1daea2aebeb87.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "Zombie Yeti-27",
+					"baseLayerID": 249,
+					"baseLayerMD5": "a866ae0e3fdd96269c65726a54c74b0d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": 48,
+			"scratchY": -93,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Doom shroom",
+			"scripts": [[49,
+					85,
+					[["whenGreenFlag"],
+						["gotoX:y:", 2, -3],
+						["lookLike:", "Doom shroom-0"],
+						["doForever", [["nextCostume"]]]]],
+				[127,
+					217,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIfElse", ["=", ["readVariable", "page"], "3"], [["show"]], [["hide"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Doom shroom-0",
+					"baseLayerID": 250,
+					"baseLayerMD5": "16b951c5a3e4e12b540698731b96b867.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-1",
+					"baseLayerID": 251,
+					"baseLayerMD5": "9b93fdcc0ac95c2b40c4cfd4da38f566.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-2",
+					"baseLayerID": 251,
+					"baseLayerMD5": "9b93fdcc0ac95c2b40c4cfd4da38f566.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-3",
+					"baseLayerID": 252,
+					"baseLayerMD5": "1e4e35032a493213cd59cb54a92e3662.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-4",
+					"baseLayerID": 252,
+					"baseLayerMD5": "1e4e35032a493213cd59cb54a92e3662.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-5",
+					"baseLayerID": 253,
+					"baseLayerMD5": "3c47f16a71bfb6d3acb89c59de061ac7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-6",
+					"baseLayerID": 253,
+					"baseLayerMD5": "3c47f16a71bfb6d3acb89c59de061ac7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-7",
+					"baseLayerID": 254,
+					"baseLayerMD5": "2cd10548914d782d09ad266afbeb6c81.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-8",
+					"baseLayerID": 254,
+					"baseLayerMD5": "2cd10548914d782d09ad266afbeb6c81.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-9",
+					"baseLayerID": 255,
+					"baseLayerMD5": "ab0afb09c2fef1a6671223f533e9c75f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-10",
+					"baseLayerID": 255,
+					"baseLayerMD5": "ab0afb09c2fef1a6671223f533e9c75f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-11",
+					"baseLayerID": 256,
+					"baseLayerMD5": "af02dca395cce7c169d9be62e10a57a3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-12",
+					"baseLayerID": 256,
+					"baseLayerMD5": "af02dca395cce7c169d9be62e10a57a3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-13",
+					"baseLayerID": 257,
+					"baseLayerMD5": "1b9570d62f4a9c66d8f41a20c4a22cbe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-14",
+					"baseLayerID": 257,
+					"baseLayerMD5": "1b9570d62f4a9c66d8f41a20c4a22cbe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-15",
+					"baseLayerID": 258,
+					"baseLayerMD5": "cfae2d9941a249c45e1672be0a7fdad3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-16",
+					"baseLayerID": 258,
+					"baseLayerMD5": "cfae2d9941a249c45e1672be0a7fdad3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-17",
+					"baseLayerID": 259,
+					"baseLayerMD5": "6874bd74cf686f807fcad9b3c97856f9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-18",
+					"baseLayerID": 259,
+					"baseLayerMD5": "6874bd74cf686f807fcad9b3c97856f9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-19",
+					"baseLayerID": 260,
+					"baseLayerMD5": "c32edd636672e83bb0c58cabbda07be6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-20",
+					"baseLayerID": 260,
+					"baseLayerMD5": "c32edd636672e83bb0c58cabbda07be6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-21",
+					"baseLayerID": 261,
+					"baseLayerMD5": "cc714e2d4a3a388ec1913780e8558c50.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-22",
+					"baseLayerID": 261,
+					"baseLayerMD5": "cc714e2d4a3a388ec1913780e8558c50.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-23",
+					"baseLayerID": 262,
+					"baseLayerMD5": "4dff9de1aea17d9dfa9d319c0c1fc879.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-24",
+					"baseLayerID": 262,
+					"baseLayerMD5": "4dff9de1aea17d9dfa9d319c0c1fc879.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-25",
+					"baseLayerID": 263,
+					"baseLayerMD5": "50f8981c16afa3fd11192c3912908545.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-26",
+					"baseLayerID": 263,
+					"baseLayerMD5": "50f8981c16afa3fd11192c3912908545.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-27",
+					"baseLayerID": 264,
+					"baseLayerMD5": "0eb103ef888d9c13aea4edcfd811cf97.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-28",
+					"baseLayerID": 264,
+					"baseLayerMD5": "0eb103ef888d9c13aea4edcfd811cf97.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-29",
+					"baseLayerID": 265,
+					"baseLayerMD5": "9235c26f8b31b6879091bcfb8146d62c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-30",
+					"baseLayerID": 265,
+					"baseLayerMD5": "9235c26f8b31b6879091bcfb8146d62c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-31",
+					"baseLayerID": 266,
+					"baseLayerMD5": "824470e328d62c68cb2d27e617a5aed8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-32",
+					"baseLayerID": 266,
+					"baseLayerMD5": "824470e328d62c68cb2d27e617a5aed8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-33",
+					"baseLayerID": 267,
+					"baseLayerMD5": "9488a18ab6fa68f4eb5b07f7ec5e908f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-34",
+					"baseLayerID": 267,
+					"baseLayerMD5": "9488a18ab6fa68f4eb5b07f7ec5e908f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-35",
+					"baseLayerID": 268,
+					"baseLayerMD5": "50c01bc51b44dc9c03903321c3bf501d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-36",
+					"baseLayerID": 268,
+					"baseLayerMD5": "50c01bc51b44dc9c03903321c3bf501d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-37",
+					"baseLayerID": 269,
+					"baseLayerMD5": "13d763d43dc52b58ae562f96d5c98032.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-38",
+					"baseLayerID": 269,
+					"baseLayerMD5": "13d763d43dc52b58ae562f96d5c98032.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-39",
+					"baseLayerID": 270,
+					"baseLayerMD5": "716d4c9b3f32c9899cd8ea892e807b26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-40",
+					"baseLayerID": 270,
+					"baseLayerMD5": "716d4c9b3f32c9899cd8ea892e807b26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-41",
+					"baseLayerID": 271,
+					"baseLayerMD5": "d8a496fe54d6f1c528ae13e0ff201d95.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-42",
+					"baseLayerID": 271,
+					"baseLayerMD5": "d8a496fe54d6f1c528ae13e0ff201d95.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-43",
+					"baseLayerID": 272,
+					"baseLayerMD5": "43e4e91fcd8ac76259048eb8567365f6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-44",
+					"baseLayerID": 272,
+					"baseLayerMD5": "43e4e91fcd8ac76259048eb8567365f6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "Doom shroom-45",
+					"baseLayerID": 273,
+					"baseLayerMD5": "51677653a76532ff54a7104bf9e70772.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 94,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 20,
+			"scratchX": 2,
+			"scratchY": -3,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "page",
+			"color": 15629590,
+			"label": "page",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 393,
+			"y": 338,
+			"visible": false
+		}],
+	"info": {
+		"swfVersion": "v440.2",
+		"videoOn": false,
+		"flashVersion": "LNX 11,2,202,521",
+		"hasCloudData": false,
+		"scriptCount": 25,
+		"projectID": "25829580",
+		"userAgent": "Mozilla\/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko\/20100101 Firefox\/41.0",
+		"spriteCount": 11
+	}
+}
