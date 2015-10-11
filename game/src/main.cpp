@@ -23,7 +23,7 @@ const int SCREEN_FPS = 60;
 const int SCREEN_TICKS_PER_FRAME = 1000 / SCREEN_FPS;
 
 int main( int argc, char* args[] ) {
-    
+
     SDLInitializer sdlinit("Zelda",1480,850);
     //A sleepy rendering loop, wait for 3 seconds and render and present the screen each time
     bool quit=false;

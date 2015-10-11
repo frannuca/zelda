@@ -56,3 +56,10 @@ character_link::character_link(SDLInitializer &sdlInitializer): character(sdlIni
 
 
 }
+
+character_link::~character_link() {
+    SDL_DestroyTexture(tex_link_down);
+    SDL_DestroyTexture(tex_link_up);
+    SDL_DestroyTexture(tex_link_left);
+    SDL_DestroyTexture(tex_link_right);
+}

@@ -6,12 +6,13 @@
 #define ANALYTICS_CHARACTER_LINK_H
 
 #include "character.h"
+#include <SDL2/SDL.h>
 class character_link: public character {
 
 public:
     character_link(SDLInitializer& sdlInitializer);
     virtual void draw(const Uint8 *keys) override;
-
+    virtual ~character_link();
 private:
     SDL_Texture *tex_link_down;
     SDL_Texture *tex_link_up;

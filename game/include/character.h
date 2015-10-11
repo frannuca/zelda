@@ -14,12 +14,10 @@ class character {
 public:
     character(SDLInitializer &sdlinit, const int &width, const int &heigth);
     virtual void draw(const Uint8 *keys) =0;
+    virtual ~character(){};
 
 protected:
     SDL_Texture* createtexture(std::string imagePath,bool withTransparency=true);
-    int w_;
-    int h_;
-    SDL_Texture* texture;
     SDLInitializer& sdlinit_;
     int last_move_;
     SDL_Rect position_in_window;
