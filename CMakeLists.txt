@@ -1,60 +1,30 @@
-project (analytics)
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.7)
 
-#----------------------------------
-#general path env variables -------
-#----------------------------------
+project(attackovertime)
 
-set(Python_ADDITIONAL_VERSIONS 2.7)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(PROTOBUF "/opt/dev/protobuf/2.6.1")
-set(GSL_HOME "/opt/dev/gsl/1.16")
-set(PYTHON_LIBRARY "/opt/dev/anaconda/2.3.0/lib")
-set(PYTHON_INCLUDE_DIR "/opt/dev/anaconda/2.3.0/include/python2.7")
-set(POCO_HOME "/opt/dev/poco/1.6.1")
-set(MYSQL_HOME "/opt/dev/mysql/1.1.6")
-set(POSTGRES_HOME "/opt/dev/postgres/4.0.1")
-set(NLOPT_HOME "/opt/dev/nlopt/2.4.2")
-set(ARMADILLO_HOME "/opt/dev/armadillo/6.100.0")
-set(SDL_HOME "/opt/dev/sdl/2.2.3" )
+message(STATUS "this is project source" ${PROJECT_SOURCE_DIR})
+
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
+
+find_package( ZLIB REQUIRED )
+find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
+find_package(SDL2_ttf REQUIRED)
 
 
+include_directories(${SDL2_INCLUDE_DIR}
+                    ${SDL2_IMAGE_INCLUDE_DIR}
+                    ${SDL2_TTF_INCLUDE_DIR}
+                    ${ZLIB_INCLUDE_DIRS})
 
-set(BOOST_ROOT "/opt/dev/boost/1.59.0")
+add_executable(attackovertime main.cpp Game.cpp Game.h TextureManager.cpp TextureManager.h Map.cpp Map.h ECS/ECS.h ECS/SpriteComponent.h ECS/TransformComponent.h ECS/Components.h Vector2D.cpp Vector2D.h ECS/KeyboardController.h ECS/ColliderComponent.h ECS/Collision.cpp ECS/Collision.h ECS/TileComponent.cpp ECS/TileComponent.h Observer.cpp Observer.h)
 
-
-set(SPDLOG_HOME "/opt/dev/spdlog")
-
-
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
-set(USE_STATIC_BOOST 0)
-set(BOOST_VERSION 1.59.0)
+target_link_libraries(attackovertime ${SDL2_LIBRARY}
+                             ${SDL2_IMAGE_LIBRARIES}
+                             ${SDL2_TTF_LIBRARIES}
+                             ${ZLIB_LIBRARIES})
 
 
-add_subdirectory(game)
-enable_testing ()
-add_test (NAME MyTest COMMAND Test)
-
-
-set (copy_cmd "cp")
-set (copy_arg1  "${CMAKE_SOURCE_DIR}/test/resources/alloc.proto")
-set (copy_arg2  "/tmp/alloc.proto")
-message(STATUS "cp cmd: ${copy_cmd}")
-execute_process(COMMAND ${copy_cmd} ${copy_arg1} ${copy_arg2}
-        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-        RESULT_VARIABLE cp_result
-        OUTPUT_VARIABLE cp_ver)
-
-set (copy_arg1  "${CMAKE_SOURCE_DIR}/test/resources/allocresponse.proto")
-set (copy_arg2  "/tmp/allocresponse.proto")
-message(STATUS "cp cmd: ${copy_cmd}")
-execute_process(COMMAND ${copy_cmd} ${copy_arg1} ${copy_arg2}
-        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-        RESULT_VARIABLE cp_result
-        OUTPUT_VARIABLE cp_ver)
-
-message(STATUS "copy ver[${git_result}]: ${git_ver}")

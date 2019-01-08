@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="attackovertime" targetName="attackovertime" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="375acc00-2a24-4c8d-b10c-8068439a3926" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ECS/ColliderComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/Collision.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/Collision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/Components.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/ECS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/KeyboardController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/SpriteComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/TileComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/TileComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECS/TransformComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextureManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextureManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vector2D.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vector2D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/DeathSoldierTilesheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/hero2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/hero3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/xeonsheet.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/zombie_n_skeleton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/include/SDLInitializer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/include/character.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/include/character_link.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/include/sdlcleanup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/src/SDLInitializer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/src/character.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/src/character_link.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/src/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/bean_1280x128.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_64x64.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_death.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_death_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_1664x128.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_sword_128x728.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_down_sword_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left_1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left_1664x128.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left_2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left_3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_left_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_right.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_right_1664x128.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_right_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up_1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up_1664x128.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up_2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up_3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/link_up_64x192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/158.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/172.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/173.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/174.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/176.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/177.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/181.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/182.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/183.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/184.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/185.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/186.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/187.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/188.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/189.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/190.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/194.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/196.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/201.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/202.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/204.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/205.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/206.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/208.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/209.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/213.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/214.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/215.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/216.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/217.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/218.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/219.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/222.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/224.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/226.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/227.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/229.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/230.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/231.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/232.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/233.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/234.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/235.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/237.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/239.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/242.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/243.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/244.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/245.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/246.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/247.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/248.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/250.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/253.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/254.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/255.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/257.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/258.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/260.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/261.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/262.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/264.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/265.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/266.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/267.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/268.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/269.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/270.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/271.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/272.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/273.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/274.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/zombies/project.json" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="96" column="67" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+              <folding>
+                <element signature="e#42#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hero.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ECS/SpriteComponent.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+              <folding>
+                <element signature="e#125#148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="e#104#120#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/TransformComponent.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="22" />
+              <folding>
+                <element signature="e#130#146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Observer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="30" column="107" selection-start-line="30" selection-start-column="107" selection-end-line="30" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Observer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/ColliderComponent.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#130#147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/Components.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="e#115#131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/ECS.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding>
+                <element signature="e#101#120#0" expanded="true" />
+                <element signature="e#409#421#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>0</find>
+      <find>Update</find>
+      <find>texture</find>
+      <find>2</find>
+      <find>(in</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>1</replace>
+      <replace>0</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GameObject.h" />
+        <option value="$PROJECT_DIR$/TextureManager.h" />
+        <option value="$PROJECT_DIR$/TextureManager.cpp" />
+        <option value="$PROJECT_DIR$/GameObject.cpp" />
+        <option value="$PROJECT_DIR$/Map.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Components.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ECS.h" />
+        <option value="$PROJECT_DIR$/ECS/PositionComponent.h" />
+        <option value="$PROJECT_DIR$/KeyboardController.h" />
+        <option value="$PROJECT_DIR$/ECS/KeyboardController.h" />
+        <option value="$PROJECT_DIR$/Map.cpp" />
+        <option value="$PROJECT_DIR$/Vector2D.h" />
+        <option value="$PROJECT_DIR$/Vector2D.cpp" />
+        <option value="$PROJECT_DIR$/ECS/ColliderComponent.h" />
+        <option value="$PROJECT_DIR$/ECS/Components.h" />
+        <option value="$PROJECT_DIR$/ECS/Collision.h" />
+        <option value="$PROJECT_DIR$/ECS/Collision.cpp" />
+        <option value="$PROJECT_DIR$/ECS/TileComponent.h" />
+        <option value="$PROJECT_DIR$/ECS/TileComponent.cpp" />
+        <option value="$PROJECT_DIR$/ECS/TransformComponent.h" />
+        <option value="$PROJECT_DIR$/ECS/ECS.h" />
+        <option value="$PROJECT_DIR$/Game.h" />
+        <option value="$PROJECT_DIR$/Observer.h" />
+        <option value="$PROJECT_DIR$/Observer.cpp" />
+        <option value="$PROJECT_DIR$/Game.cpp" />
+        <option value="$PROJECT_DIR$/ECS/SpriteComponent.h" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
+    <option name="y" value="38" />
+    <option name="width" value="799" />
+    <option name="height" value="562" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="attackovertime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zelda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attackovertime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zelda" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attackovertime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zelda" type="462c0819:PsiDirectoryNode" />
+              <item name="ECS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ECS" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="attackovertime" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="attackovertime" TARGET_NAME="attackovertime" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="attackovertime" RUN_TARGET_NAME="attackovertime">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="375acc00-2a24-4c8d-b10c-8068439a3926" name="Default Changelist" comment="" />
+      <created>1546281902827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546281902827</updated>
+      <workItem from="1546281906717" duration="696000" />
+      <workItem from="1546283686641" duration="5033000" />
+      <workItem from="1546340439392" duration="11915000" />
+      <workItem from="1546360030071" duration="36710000" />
+      <workItem from="1546950631180" duration="4182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="58536000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="134" y="38" width="2426" height="1402" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23471986" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956523" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956523" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39913043" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.21110177" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.34086958" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>88</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="entity" />
+        <watch expression="renderer" />
+        <watch expression="srcRect" />
+        <watch expression="xpos" />
+        <watch expression="((counter++)%7)*64" />
+        <watch expression="collider" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game/include/character_link.h" />
+    <entry file="file://$PROJECT_DIR$/game/include/sdlcleanup.h" />
+    <entry file="file://$PROJECT_DIR$/game/include/SDLInitializer.h" />
+    <entry file="file://$PROJECT_DIR$/game/src/character.cpp" />
+    <entry file="file://$PROJECT_DIR$/game/src/character_link.cpp" />
+    <entry file="file://$PROJECT_DIR$/game/src/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/game/src/SDLInitializer.cpp" />
+    <entry file="file://$PROJECT_DIR$/game/CMakeLists.txt" />
+    <entry file="file:///usr/include/SDL2/SDL_timer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextureManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS.cpp" />
+    <entry file="file://$PROJECT_DIR$/assets/grass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/water.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#101#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameObject.cpp" />
+    <entry file="file://$PROJECT_DIR$/ECS/SpriteComponent.cpp" />
+    <entry file="file://$PROJECT_DIR$/ECS/PositionComponent.cpp" />
+    <entry file="file://$PROJECT_DIR$/GameObject.h" />
+    <entry file="file://$PROJECT_DIR$/assets/DeathSoldierTilesheet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="580" selection-start-line="580" selection-end-line="580" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/stl_iterator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="792" selection-start-line="792" selection-end-line="792" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/move.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/xeonsheet.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/zombie_n_skeleton.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/KeyboardController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+          <folding>
+            <element signature="e#131#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dirt.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#43#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vector2D.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vector2D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextureManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#43#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/alloc_traits.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="391" column="26" selection-start-line="391" selection-start-column="26" selection-end-line="391" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/ext/alloc_traits.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/Collision.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/Collision.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#43#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/TileComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#121#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hero2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/TileComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/predefined_ops.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3124">
+          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hero.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/Components.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#115#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/ColliderComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#130#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/ECS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding>
+            <element signature="e#101#120#0" expanded="true" />
+            <element signature="e#409#421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#104#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/TransformComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="22" />
+          <folding>
+            <element signature="e#130#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="30" column="107" selection-start-line="30" selection-start-column="107" selection-end-line="30" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="96" column="67" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+          <folding>
+            <element signature="e#42#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/SpriteComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding>
+            <element signature="e#125#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
